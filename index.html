@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Number Example</title>
+</head>
+<body>
+    <h1>Generate Random Number</h1>
+    <button id="generateButton">Generate Random Number</button>
+    <p id="randomNumber">Click the button to see a random number.</p>
+
+    <script>
+        // JavaScript to handle the button click event
+        document.getElementById('generateButton').addEventListener('click', function() {
+            var min = 1;
+            var max = 10;
+            var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+            document.getElementById('randomNumber').textContent = 'Random Number: ' + randomNumber;
+        });
+    </script>
+</body>
+</html>
